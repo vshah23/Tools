@@ -1,0 +1,14 @@
+export PATH="$HOME/.bitrise/tools:$HOME/go/bin:$HOME/flutter/bin:$HOME/Library/Android/sdk/emulator:$HOME/Library/Android/sdk/platform-tools:$PATH"
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
+export EDITOR=subl
+PROMPT="%F{cyan}[%*] %f%F{201}%U%~>%u%f "
+eval "$(rbenv init - zsh)"
+eval $(thefuck --alias)
+alias la="ls -al"
+alias br="bitrise run"
+alias gotv="go mod tidy && go mod vendor"
+alias dev="cd $HOME/Developer"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
